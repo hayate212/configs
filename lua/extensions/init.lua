@@ -34,6 +34,15 @@ local plugins = {
     event = 'InsertEnter',
     opts = function() require 'extensions.autopairs' end,
   },
+  {
+    'neovim/nvim-lspconfig',
+  },
+  {
+    "williamboman/mason.nvim",
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+  },
 }
 
 local opts = {

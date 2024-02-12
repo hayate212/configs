@@ -16,3 +16,16 @@ vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
 		vim.api.nvim_buf_set_option(0, 'shiftwidth', 0)
 	end
 })
+
+-- clipboard とレジスタの共有
+vim.opt.clipboard = 'unnamedplus'
+
+
+-- OS 別設定
+if vim.fn.has('mac') == 1 then 
+  vim.opt.shell = 'fish'
+end
+if vim.fn.has('wsl') == 1 then
+  vim.optshell = 'bash'
+end
+
