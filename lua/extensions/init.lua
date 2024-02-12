@@ -29,6 +29,11 @@ local plugins = {
     'akinsho/toggleterm.nvim', version = '*',
     config = function() require 'extensions.toggleterm' end,
   },
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    opts = function() require 'extensions.autopairs' end,
+  },
 }
 
 local opts = {
