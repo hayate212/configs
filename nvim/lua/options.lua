@@ -26,6 +26,6 @@ if vim.fn.has('mac') == 1 then
   vim.opt.shell = 'fish'
 end
 if vim.fn.has('wsl') == 1 then
-  vim.optshell = 'bash'
+  vim.opt.shell = 'bash'
 end
 
