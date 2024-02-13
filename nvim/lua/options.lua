@@ -20,12 +20,11 @@ vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWinEnter' }, {
 -- clipboard とレジスタの共有
 vim.opt.clipboard = 'unnamedplus'
 
+vim.opt.shell = 'fish'
 
 -- OS 別設定
 if vim.fn.has('mac') == 1 then 
-  vim.opt.shell = 'fish'
 end
 if vim.fn.has('wsl') == 1 then
-  vim.opt.shell = 'bash'
 end
 
