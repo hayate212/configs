@@ -2,6 +2,7 @@ local plugins = {
   {
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
+    config = function() require 'extensions.nvim-treesitter' end,
   },
   {
     'rmehri01/onenord.nvim',
@@ -38,11 +39,33 @@ local plugins = {
     'neovim/nvim-lspconfig',
   },
   {
-    "williamboman/mason.nvim",
+    'williamboman/mason.nvim',
+    config = function() require 'extensions.mason' end,
   },
   {
-    "williamboman/mason-lspconfig.nvim",
+    'williamboman/mason-lspconfig.nvim',
+    config = function() require 'extensions.mason-lspconfig' end,
   },
+  {
+    'jose-elias-alvarez/null-ls.nvim',
+    config = function() require 'extensions.null-ls' end,
+  },
+  {
+    'jayp0521/mason-null-ls.nvim',
+    config = function() require 'extensions.mason-null-ls' end,
+  },
+  {
+    'hrsh7th/nvim-cmp',
+    config = function() require 'extensions.nvim-cmp' end,
+  },
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+  {
+    'ray-x/lsp_signature.nvim',
+    config = function() require 'extensions.lsp-signature' end,
+  },
+  'onsails/lspkind-nvim',
 }
 
 local opts = {
