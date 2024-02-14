@@ -1,5 +1,6 @@
 vim.api.nvim_set_option('termguicolors', true)
 vim.api.nvim_set_option('scrolloff', 4)
+vim.api.nvim_set_option('relativenumber', true)
 
 -- window
 vim.api.nvim_win_set_option(0, 'number', true)
