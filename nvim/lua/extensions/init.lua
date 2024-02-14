@@ -67,6 +67,7 @@ local plugins = {
     config = function() require 'extensions.lsp-signature' end,
   },
   'onsails/lspkind-nvim',
+  'windwp/nvim-ts-autotag',
 }
 
 local opts = {

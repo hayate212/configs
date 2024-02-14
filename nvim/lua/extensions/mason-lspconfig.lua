@@ -5,6 +5,7 @@ mason_lspconfig.setup({
   ensure_installed = {
     'tsserver',
     'eslint',
+    'tailwindcss',
   },
   automatic_installation = true,
 })
