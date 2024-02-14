@@ -5,9 +5,10 @@ local plugins = {
     config = function() require 'extensions.nvim-treesitter' end,
   },
   {
-    'rmehri01/onenord.nvim',
+    "folke/tokyonight.nvim",
+    lazy = false,
     priority = 1000,
-    config = function() require 'extensions.onenord' end,
+    opts = {},
   },
   {
     'nvim-lualine/lualine.nvim',
@@ -100,3 +101,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup(plugins, opts)
 require 'extensions.toggleterm'
+require 'extensions.tokyonight'
