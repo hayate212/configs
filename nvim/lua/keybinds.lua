@@ -2,6 +2,8 @@ local keymap = vim.keymap
 
 vim.g.mapleader = ' '
 
+keymap.set('n', ';', ':')
+
 -- jj で esc
 keymap.set('i','jj','<Esc>')
 
