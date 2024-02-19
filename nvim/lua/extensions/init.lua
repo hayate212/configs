@@ -68,6 +68,7 @@ local plugins = {
   },
   'onsails/lspkind-nvim',
   'windwp/nvim-ts-autotag',
+  'L3MON4D3/LuaSnip',
 }
 
 local opts = {
