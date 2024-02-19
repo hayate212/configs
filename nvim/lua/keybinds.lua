@@ -27,3 +27,17 @@ vim.api.nvim_set_keymap('n', '<A-Down>', ':m .+1<CR>==', { noremap = true, silen
 vim.keymap.set({ 'n' }, '<A-S-f>', vim.lsp.buf.format)
 
 vim.keymap.set({ 'n' }, '<F12>', '<Cmd>Telescope lsp_references<CR>')
+
+-- tab
+-- タブを新しく開く
+vim.api.nvim_set_keymap('n', '<Leader>N', ':tabnew<CR>', { noremap = true, silent = true })
+
+-- 次のタブに移動
+vim.api.nvim_set_keymap('n', '<Leader><S-Left>', ':tabnext<CR>', { noremap = true, silent = true })
+
+-- 前のタブに移動
+vim.api.nvim_set_keymap('n', '<Leader><S-Right>', ':tabprevious<CR>', { noremap = true, silent = true })
+
+-- 現在のタブを閉じる
+vim.api.nvim_set_keymap('n', '<Leader>W', ':tabclose<CR>', { noremap = true, silent = true })
+
