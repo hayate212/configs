@@ -19,6 +19,10 @@ keymap.set('', '<Leader>h', '<C-w>h')
 vim.api.nvim_set_keymap('n', '<A-Right>', 'w', {noremap = true, silent = true})
 -- ALT+左矢印で前の単語の始まりに移動
 vim.api.nvim_set_keymap('n', '<A-Left>', 'b', {noremap = true, silent = true})
+-- 現在の行と上の行を入れ替え
+vim.api.nvim_set_keymap('n', '<A-Up>', ':m .-2<CR>==', { noremap = true, silent = true })
+-- 現在の行と下の行を入れ替え
+vim.api.nvim_set_keymap('n', '<A-Down>', ':m .+1<CR>==', { noremap = true, silent = true })
 
 vim.keymap.set({ 'n' }, '<A-S-f>', vim.lsp.buf.format)
 
