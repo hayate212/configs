@@ -1,6 +1,6 @@
 require('tokyonight').setup {
-  style = 'night',
-  transparent = true,
+  style = 'storm',
+  -- transparent = true,
 }
 
 -- カラースキームの適用

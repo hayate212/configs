@@ -9,6 +9,7 @@ local plugins = {
     lazy = false,
     priority = 1000,
     opts = {},
+    config = function() require 'extensions.tokyonight' end,
   },
   {
     'nvim-lualine/lualine.nvim',
@@ -102,5 +103,3 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup(plugins, opts)
-require 'extensions.toggleterm'
-require 'extensions.tokyonight'
