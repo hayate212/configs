@@ -1,3 +1,5 @@
-require('toggleterm').setup {}
+require('toggleterm').setup {
+  open_mapping = '<Leader>`',
+  start_insert = true,
+}
 
-vim.keymap.set('n', '<Leader>`', ':ToggleTerm<CR>', {})
