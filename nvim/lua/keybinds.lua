@@ -23,9 +23,9 @@ vim.api.nvim_set_keymap('n', '<A-Left>', 'b', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<A-Up>', ':m .-2<CR>==', { noremap = true, silent = true })
 -- 現在の行と下の行を入れ替え
 vim.api.nvim_set_keymap('n', '<A-Down>', ':m .+1<CR>==', { noremap = true, silent = true })
-
+-- Alt+Shift+F でフォーマット
 vim.keymap.set({ 'n' }, '<A-S-f>', vim.lsp.buf.format)
-
+-- F12 でコードリファレンス
 vim.keymap.set({ 'n' }, '<F12>', '<Cmd>Telescope lsp_references<CR>')
 
 -- tab
