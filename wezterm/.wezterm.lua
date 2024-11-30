@@ -16,7 +16,8 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.7
+config.win32_system_backdrop = 'Acrylic'
 config.color_scheme = 'Tokyo Night Storm'
 
 config.keys = {
