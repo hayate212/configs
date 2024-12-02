@@ -71,7 +71,10 @@ local plugins = {
   'windwp/nvim-ts-autotag',
   'L3MON4D3/LuaSnip',
   'f-person/git-blame.nvim',
-  'lewis6991/gitsigns.nvim',
+  {
+    'lewis6991/gitsigns.nvim',
+    config = function() require 'extensions.gitsigns' end,
+  }
 }
 
 local opts = {
