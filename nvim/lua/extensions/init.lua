@@ -70,6 +70,8 @@ local plugins = {
   'onsails/lspkind-nvim',
   'windwp/nvim-ts-autotag',
   'L3MON4D3/LuaSnip',
+  'f-person/git-blame.nvim',
+  'lewis6991/gitsigns.nvim',
 }
 
 local opts = {
