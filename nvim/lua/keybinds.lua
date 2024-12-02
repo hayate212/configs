@@ -34,9 +34,11 @@ vim.api.nvim_set_keymap('n', '<Leader>N', ':tabnew<CR>', { noremap = true, silen
 
 -- 次のタブに移動
 vim.api.nvim_set_keymap('n', '<Leader><S-Left>', ':tabnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>L', ':tabnext<CR>', { noremap = true, silent = true })
 
 -- 前のタブに移動
 vim.api.nvim_set_keymap('n', '<Leader><S-Right>', ':tabprevious<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>H', ':tabprevious<CR>', { noremap = true, silent = true })
 
 -- 現在のタブを閉じる
 vim.api.nvim_set_keymap('n', '<Leader>W', ':tabclose<CR>', { noremap = true, silent = true })
