@@ -70,5 +70,9 @@ config.keys = {
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   config.default_prog = { 'wsl' }
 end
+-- macos
+if wezterm.target_triple == 'aarch64-apple-darwin' then
+  config.macos_window_background_blur = 20
+end
 
 return config
