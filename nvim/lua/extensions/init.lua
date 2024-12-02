@@ -74,7 +74,12 @@ local plugins = {
   {
     'lewis6991/gitsigns.nvim',
     config = function() require 'extensions.gitsigns' end,
-  }
+  },
+  {
+    "shellRaining/hlchunk.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function() require 'extensions.hlchunk' end,
+  },
 }
 
 local opts = {
