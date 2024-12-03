@@ -38,6 +38,10 @@ local plugins = {
     opts = function() require 'extensions.autopairs' end,
   },
   {
+    'windwp/nvim-ts-autotag',
+    config = function() require 'extensions.autotag' end,
+  },
+  {
     'neovim/nvim-lspconfig',
   },
   {
@@ -68,7 +72,6 @@ local plugins = {
     config = function() require 'extensions.lsp-signature' end,
   },
   'onsails/lspkind-nvim',
-  'windwp/nvim-ts-autotag',
   'L3MON4D3/LuaSnip',
   'f-person/git-blame.nvim',
   {
