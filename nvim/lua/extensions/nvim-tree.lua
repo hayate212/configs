@@ -1,4 +1,8 @@
-require('nvim-tree').setup {}
+require('nvim-tree').setup {
+  update_focused_file = {
+    enable = true,
+  },
+}
 
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { silent = true, noremap = true })
 
