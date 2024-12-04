@@ -87,6 +87,7 @@ local plugins = {
 }
 
 local opts = {
+  defaults = { lazy = true },
   checker = { enabled = true, },
   reset_packpath = true,
   rtp = {
