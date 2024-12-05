@@ -20,7 +20,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local bufopts = { noremap = true, silent = true, buffer = ev.buf }
     -- builtin lsp
+    -- F12 でコードリファレンス
     vim.keymap.set('n', '<F12>', vim.lsp.buf.references, bufopts)
+    -- Alt+Shift+F でフォーマット
+    vim.keymap.set('n', '<A-S-f>', vim.lsp.buf.format, bufopts)
   end
 })
 
