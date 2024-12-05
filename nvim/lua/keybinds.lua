@@ -38,5 +38,7 @@ vim.api.nvim_set_keymap('n', '<Leader>H', ':tabprevious<CR>', { noremap = true, 
 -- 現在のタブを閉じる
 vim.api.nvim_set_keymap('n', '<Leader>W', ':tabclose<CR>', { noremap = true, silent = true })
 
--- Telescope
+-- Telescope find_files
 vim.keymap.set('n', '<Leader>p', ':Telescope find_files<CR>', {noremap = true, silent = true })
+-- F12 でコードリファレンス
+vim.keymap.set('n', '<F12>', ':Telescope lsp_references<CR>', {noremap = true, silent = true })

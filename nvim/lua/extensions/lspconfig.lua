@@ -20,10 +20,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local bufopts = { noremap = true, silent = true, buffer = ev.buf }
     -- builtin lsp
-    -- F12 でコードリファレンス
-    vim.keymap.set('n', '<F12>', vim.lsp.buf.references, bufopts)
+    -- rename
+    vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, bufopts)
     -- Alt+Shift+F でフォーマット
     vim.keymap.set('n', '<A-S-f>', vim.lsp.buf.format, bufopts)
+    -- F11 で定義ジャンプ
+    vim.keymap.set('n', '<F11>', ':Lspsaga goto_definition<CR>', bufopts)
   end
 })
 
@@ -34,6 +36,9 @@ nvim_lsp.gopls.setup({
 nvim_lsp.lua_ls.setup({
   settings = {
     Lua = {
+      diagnostics = {
+        globals = { 'vim' },
+      },
       format = {
         enable = true,
         defaultConfig = {

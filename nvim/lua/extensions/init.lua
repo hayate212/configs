@@ -46,6 +46,12 @@ local plugins = {
   {
     'neovim/nvim-lspconfig',
     event = 'VeryLazy',
+    dependencies = {
+      {
+        'nvimdev/lspsaga.nvim',
+        config = function() require 'extensions.lspsaga' end,
+      }
+    },
     config = function() require 'extensions.lspconfig' end,
   },
   {
