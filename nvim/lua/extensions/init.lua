@@ -47,20 +47,8 @@ local plugins = {
     'neovim/nvim-lspconfig',
   },
   {
-    'williamboman/mason.nvim',
-    config = function() require 'extensions.mason' end,
-  },
-  {
-    'williamboman/mason-lspconfig.nvim',
-    config = function() require 'extensions.mason-lspconfig' end,
-  },
-  {
     'jose-elias-alvarez/null-ls.nvim',
     config = function() require 'extensions.null-ls' end,
-  },
-  {
-    'jayp0521/mason-null-ls.nvim',
-    config = function() require 'extensions.mason-null-ls' end,
   },
   {
     'hrsh7th/nvim-cmp',
