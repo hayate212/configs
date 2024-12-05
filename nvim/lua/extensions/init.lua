@@ -45,6 +45,8 @@ local plugins = {
   },
   {
     'neovim/nvim-lspconfig',
+    event = 'VeryLazy',
+    config = function() require 'extensions.lspconfig' end,
   },
   {
     'jose-elias-alvarez/null-ls.nvim',
