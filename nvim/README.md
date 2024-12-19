@@ -6,7 +6,3 @@
 
 Update: `:Lazy update`
 
-## LSP
-
-[Mason](https://github.com/williamboman/mason-lspconfig.nvim)
-Setup: `:Mason`
