@@ -77,9 +77,14 @@ local plugins = {
     config = function() require 'extensions.gitsigns' end,
   },
   {
-    "shellRaining/hlchunk.nvim",
-    event = { "BufReadPre", "BufNewFile" },
+    'shellRaining/hlchunk.nvim',
+    event = { 'BufReadPre', 'BufNewFile' },
     config = function() require 'extensions.hlchunk' end,
+  },
+  {
+    'simrat39/symbols-outline.nvim',
+    lazy = false,
+    config = function() require('symbols-outline').setup() end,
   },
 }
 
